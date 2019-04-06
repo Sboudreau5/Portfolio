@@ -1,0 +1,308 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html {
+    
+scroll-behavior: smooth;
+}
+
+
+body {
+ 
+
+font-family: 'Open Sans', sans-serif;
+height: 500em;
+overflow-y: scroll;
+overflow-x: hidden;
+margin: 0;
+
+    
+}
+
+
+p {
+    
+font-size: 1vw;
+color: white;
+}
+
+ul{
+    
+color: white;
+z-index: 99;
+margin-top: 5em;
+margin-left: 1em;
+padding-left: 0em;
+text-align: left;
+opacity: 0;
+display: none;
+transition: 0.5s;
+
+
+
+
+
+
+}
+
+
+a {
+    
+color: white;
+text-decoration: none;
+
+
+
+
+}
+
+li {
+    
+list-style: none;
+padding-bottom: 1em;
+padding-top: 1em;
+transition: 0.2s;
+
+
+}
+
+
+li:hover {
+    
+list-style: none;
+padding-bottom: 1em;
+background-color: #44B1E4;
+cursor: pointer;
+
+
+}
+
+
+h1 {
+ 
+margin-left: 30px;
+font-size: 2em;
+font-weight: 200;
+
+}
+
+h2{
+    
+color: white;
+letter-spacing: 5px;
+font-size: 3vw;
+}
+
+h3 {
+    
+color: white;
+font-weight: 400;
+font-size: 1.5vw;
+display: inline;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+
+
+.job-titles {
+
+position: absolute;   
+display: inline;
+top: 26vw;
+left: 42.3vw;
+}
+
+.about-me-paragraph {
+    
+    
+float: left;
+margin-top: 13vw;
+width: 40vw;
+margin-left: 8vw;
+}
+
+
+
+.title{
+ 
+position: absolute; 
+left: 43vw;
+top: 5vw;
+letter-spacing: 10px;
+
+ 
+ 
+}
+
+
+.home-icon {
+    
+float: left;
+margin-top: 31px;
+margin-right: 20px;
+margin-left: 50px;
+opacity: 0;
+transition: 2s;
+transform: ease-in-out;
+width: 2em;
+    
+    
+}
+
+
+
+.about-icon {
+    
+float: left;
+margin-top: 28px;
+margin-right: 20px;
+margin-left: 52px;
+opacity: 0;
+transition: 2s;
+transform: ease-in-out;
+width: 1.7em;
+    
+}
+
+.contact-icon {
+    
+float: left;
+margin-top: 33px;
+margin-right: 20px;
+margin-left: 50px;
+opacity: 0;
+transition: 2s;
+transform: ease-in-out;
+width: 1.9em;
+    
+}
+
+
+.portfolio-icon {
+    
+float: left;
+margin-top: 30px;
+margin-right: 20px;
+margin-left: 50px;
+opacity: 0;
+transition: 2s;
+transform: ease-in-out;
+width: 1.9em;
+    
+}
+
+
+.self-portrait {
+    
+float: left;
+width: 25vw;
+margin-left: 10vw;
+margin-top: 6vw;
+opacity: 1;
+border-radius: 500px;
+}
+
+
+.personal-logo {
+    
+    
+width: 30vw;
+position: absolute;
+left: 35vw;
+top: 7vw;
+}
+
+.row-one {
+    
+position: relative;
+width: 100%;
+height: 60vw;
+background-color: white;
+margin: 0;
+padding: 0;
+z-index: 5;
+
+}
+
+.row-two {
+    
+position: relative;
+width: 100vw;
+height: 45em;
+background-color: rgba(24,119,196,0.85);
+z-index: 4;
+
+
+}
+
+.hamburgerimenu {
+z-index: 99;
+position: fixed;
+margin-top: 1em;
+margin-left: 1em;
+display: flex;
+width: 2.5em;
+transition: 0.5s;
+
+
+}
+
+
+.hamburgerimenu:hover {
+z-index: 99;
+position: fixed;
+cursor: pointer;
+opacity: 0.5;
+
+}
+
+
+
+.side-nav{
+    
+position: fixed;
+background-color: #434343;
+width: 0em;
+height: 100vh;
+left: -1em;
+top: 0em;
+transition: 0.5s;
+transform: ease-in-out;
+z-index: 98;
+    
+    
+}
+
+.exitmenu {
+    
+display: none; 
+font-size: 3.5em;
+color: white;
+position: fixed;
+z-index: 99;
+transform: rotate(45deg);
+margin-left: 0.35em;
+margin-top: -0.2em;
+transition: 0.5s;
+
+
+}
+
+
+.exitmenu:hover {
+    
+display: none; 
+
+color: #44B1E4;
+position: fixed;
+z-index: 99;
+transform: rotate(45deg);
+cursor: pointer;
+
+
+
+}
+
+
