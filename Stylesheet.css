@@ -12,9 +12,9 @@ body {
  
 
 font-family: 'Open Sans', sans-serif;
-height: 180vw;
-
+min-height: 100%;
 margin: 0;
+overflow-x: hidden;
 
     
 }
@@ -107,6 +107,25 @@ margin-left: 10px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .twitter-icon {
     
 left: 0.55vw;
@@ -175,8 +194,8 @@ opacity: 0.5;
 .resume {
     
 position: absolute;
-top: 43.7vw;
-left: 27vw;
+top: 16.5vw;
+left: 61.5vw;
 
 }
 
@@ -190,8 +209,8 @@ opacity: 0.5;
 .download-icon {
     
 position: absolute;
-top: 43.7vw;
-left: 24.5vw;
+top: 16.5vw;
+left: 58.5vw;
 width: 2vw;
 
 }
@@ -867,6 +886,7 @@ font-family: 'Open Sans', sans-serif;
     html {
     
 scroll-behavior: smooth;
+
 }
 
 
@@ -874,9 +894,9 @@ body {
  
 
 font-family: 'Open Sans', sans-serif;
-height: 220em;
-
+min-height: 100%;
 margin: 0;
+overflow-x: hidden;
 
     
 }
@@ -1018,7 +1038,7 @@ left: 3.3vw;
 .resume {
     
 position: absolute;
-top: 295vw;
+top: 148vw;
 left: 38vw;
 
 
@@ -1034,7 +1054,7 @@ opacity: 0.5;
 .download-icon {
     
 position: absolute;
-top: 295vw;
+top: 148vw;
 left: 28vw;
 width: 7vw;
 
@@ -1494,7 +1514,7 @@ margin-top: 0;
 background-color: rgba(24,119,196,0.85);
 position: relative;
 width: 100vw;
-height: 80em;
+height: 38em;
 z-index: 4;
 margin-top: 0;
 overflow: hidden;
@@ -1752,8 +1772,12 @@ display: inline-block;
 margin-right: 3vw;
 font-weight: 400;
 line-height: 2;
-transition: 0.5s ease;
+transition: 1s ease;
+
 }
+
+
+
 
 .bar {
     
@@ -1767,13 +1791,14 @@ transition: 0.5s ease;
 }
 
 .catagories-style:hover {
- 
-border-bottom: 2px solid #161616; 
-cursor: pointer;
+    
+cursor: pointer; 
+border-bottom: solid 2px rgba(35,35,35,1.00);
+transition: 0.5s ease;
 opacity: 0.5;
-line-height: 2;
-  
 }
+
+
 
 body.portfolio-page {
     
@@ -1820,6 +1845,7 @@ top: 20vw;
 left: 18vw;
 display: none;
 opacity: 0;
+transition: 0.5s ease;
 }
 
 .illustration-images {
@@ -1850,6 +1876,7 @@ top: 20vw;
 left: 18vw;
 display: none;
 opacity: 0;
+transition: 0.5s ease;
 }
 
 .photography-images {
@@ -1880,6 +1907,11 @@ cursor: pointer;
   
     
 
+}
+
+#active-grid {
+  display: block;
+  transition: all 0.5s;
 }
 
 @media only screen and (max-width: 800px) { 

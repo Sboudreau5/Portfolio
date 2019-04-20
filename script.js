@@ -26,60 +26,116 @@ document.getElementById('exitmenu').addEventListener('click',
 });
 
 
-document.getElementById('design').addEventListener('click',
-	function() {
-    document.querySelector('.photography-grid').style.display = 'none'
-    document.querySelector('.illustration-grid').style.display = 'none'
-    document.querySelector('.design-grid').style.transition = "all 0.5s ease-in-out 0s";
-     document.querySelector('.design-grid').style.display = 'block'
+// document.getElementById('design').addEventListener('click',
+// 	function() {
+//     document.querySelector('.photography-grid').style.display = 'none'
+//     document.querySelector('.illustration-grid').style.display = 'none'
+//     document.querySelector('.design-grid').style.transition = "all 0.5s ease-in-out 0s";
+//      document.querySelector('.design-grid').style.display = 'block'
   
-    setTimeout(function() {
-        document.querySelector('.design-grid').style.opacity = 1;
-    }, 1000);
+//     setTimeout(function() {
+//         document.querySelector('.design-grid').style.opacity = 1;
+//     }, 1000);
     
   
+// });
+
+
+
+// document.getElementById('illustration').addEventListener('click',
+// 	function() {
+//     document.querySelector('.photography-grid').style.display = 'none'
+//     document.querySelector('.design-grid').style.display = 'none'
+//     document.querySelector('.illustration-grid').style.transition = "all 0.5s ease-in-out 0s";
+//      document.querySelector('.illustration-grid').style.display = 'block'
+  
+//     setTimeout(function() {
+//         document.querySelector('.illustration-grid').style.opacity = 1;
+//     }, 1000);
+    
+  
+// });
+
+
+
+// document.getElementById('photography').addEventListener('click',
+// 	function() {
+//     document.querySelector('.design-grid').style.display = 'none'
+//     document.querySelector('.illustration-grid').style.display = 'none'
+//     document.querySelector('.photography-grid').style.transition = "all 0.5s ease-in-out 0s";
+//      document.querySelector('.photography-grid').style.display = 'block'
+  
+//     setTimeout(function() {
+//         document.querySelector('.photography-grid').style.opacity = 1;
+//     }, 1000);
+    
+  
+// });
+
+
+// Grid fades
+
+var timing = 500 //length of delay
+
+document.getElementById('design').addEventListener('click',
+    function() {
+        showHideGrids('.design-grid')
+  
 });
-
-
 
 document.getElementById('illustration').addEventListener('click',
-	function() {
-    document.querySelector('.photography-grid').style.display = 'none'
-    document.querySelector('.design-grid').style.display = 'none'
-    document.querySelector('.illustration-grid').style.transition = "all 0.5s ease-in-out 0s";
-     document.querySelector('.illustration-grid').style.display = 'block'
-  
-    setTimeout(function() {
-        document.querySelector('.illustration-grid').style.opacity = 1;
-    }, 1000);
-    
+    function() {
+        showHideGrids('.illustration-grid')
   
 });
-
-
 
 document.getElementById('photography').addEventListener('click',
-	function() {
-    document.querySelector('.design-grid').style.display = 'none'
-    document.querySelector('.illustration-grid').style.display = 'none'
-    document.querySelector('.photography-grid').style.transition = "all 0.5s ease-in-out 0s";
-     document.querySelector('.photography-grid').style.display = 'block'
-  
-    setTimeout(function() {
-        document.querySelector('.photography-grid').style.opacity = 1;
-    }, 1000);
-    
+    function() {
+        showHideGrids('.photography-grid')
   
 });
 
-$("img.design-images").click(function() {
-    if ($(this).hasClass("design-images")) {
-        $(this).removeClass("design-images");
+function showHideGrids(el) {
+    var grid = document.querySelector(el)
+    if (document.querySelector('#active-grid')) {
+        document.querySelector('#active-grid').style.opacity = '0'
+        setTimeout(function() { 
+            document.querySelector('#active-grid').id = ''
+            grid.id = 'active-grid'
+            setTimeout(function() {
+                grid.style.opacity = '1'
+            }, timing)
+        }, timing)
     } else {
-        $(this).addClass("design-images-enlarged");
+        grid.id = 'active-grid'
+        setTimeout(function() {
+                grid.style.opacity = '1'
+            }, timing)
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $("img.design-images").click(function() {
+//     if ($(this).hasClass("design-images")) {
+//         $(this).removeClass("design-images");
+//     } else {
+//         $(this).addClass("design-images-enlarged");
+//     }
     
-});
+// });
 
 
 
