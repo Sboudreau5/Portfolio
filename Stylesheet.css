@@ -111,11 +111,154 @@ margin-left: 10px;
 
 
 
+/* modal stuff */ 
+
+.bg-modal1 {
+
+	width: 100vw;
+	height: 576em;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+    justify-content: center;
+	align-items: center;
+	display: none;
+    z-index: 99;
+	
+	
+	
+}
+
+.designmodal1 {
+	
+width: 55vw;
+height: 45vw;
+background-color: #FFFFFF;
+border-radius: 0px;
+z-index: 99;
+display: block;
+position: fixed;
+top: 3vw;
+
+
+
+}
+
+.close1{
+	
+position: absolute;
+top:0;
+right: 14px;
+font-size: 50px;
+transform: rotate(45deg);
+cursor: pointer;
+color: #45b0e3;
+}
+
+.close1:hover {
+    
+opacity: 0.5;
+}
+
+.modal-picture {
+    
+width: 30vw;
+position: absolute;
+left: 3vw;
+top: 5vw;
+}
+
+.modal-title {
+
+position: absolute;
+left: 35vw; 
+top: 2.6vw;
+font-size: 1.5vw;
+color: #45b0e3;
+
+}
+
+.modal-titleparagraph {
+
+    position: absolute;
+color: black;
+font-size: 1vw;
+left: 35vw;
+top: 6vw;
+    
+}
+
+
+.modal-title2 {
+
+position: absolute;
+left: 35vw; 
+top: 7vw;
+font-size: 1.5vw;
+color: #45b0e3;
+
+}
+
+.modal-titleparagraph2 {
+
+    position: absolute;
+color: black;
+font-size: 1vw;
+left: 35vw;
+top: 10.4vw;
+    
+    
+}
+
+.modal-title3 {
+
+position: absolute;
+left: 35vw; 
+top: 11.4vw;
+font-size: 1.5vw;
+color: #45b0e3;
+
+}
+
+.modal-titleparagraph3 {
+
+    position: absolute;
+color: black;
+font-size: 1vw;
+left: 35vw;
+top: 14.8vw;
+    
+}
+
+.modal-next {
+    
+font-size: 2vw;
+position: absolute;
+color: #45b0e3;
+left: 32vw;
+top: 39vw;
+
+
+}
+    
+.modal-next:hover {
+    
+opacity: 0.5;
+cursor: pointer;
+
+}   
+    
+    
+    
+
+
+    
+    
 
 
 
 
-
+/* end modal stuff */ 
 
 
 
